@@ -31,6 +31,7 @@
   <!-- Hero -->
   <header id="top" class="hero">
     <div class="hero-inner">
+      <div class="hero-text">
       <p class="eyebrow">Data Science · AI · Computer Vision</p>
       <h1 class="hero-title">
         Divya <span class="accent">Pandey</span>
@@ -69,6 +70,97 @@
         <div><strong>2</strong><span>Research Papers</span></div>
         <div><strong>85.6%</strong><span>B.Tech CGPA equiv.</span></div>
       </div>
+      </div><!-- /hero-text -->
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 320 320" class="neural-net" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="nodeGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#5cf3c8" stop-opacity="1"/>
+              <stop offset="60%" stop-color="#7c8cff" stop-opacity="0.85"/>
+              <stop offset="100%" stop-color="#7c8cff" stop-opacity="0.05"/>
+            </radialGradient>
+            <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#7c8cff" stop-opacity="0.05"/>
+              <stop offset="50%" stop-color="#7c8cff" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#5cf3c8" stop-opacity="0.05"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Layer 1 -> Layer 2 (12 lines) -->
+          <g class="nn-lines">
+            <line x1="30" y1="80"  x2="130" y2="50"/>
+            <line x1="30" y1="80"  x2="130" y2="120"/>
+            <line x1="30" y1="80"  x2="130" y2="200"/>
+            <line x1="30" y1="80"  x2="130" y2="270"/>
+            <line x1="30" y1="160" x2="130" y2="50"/>
+            <line x1="30" y1="160" x2="130" y2="120"/>
+            <line x1="30" y1="160" x2="130" y2="200"/>
+            <line x1="30" y1="160" x2="130" y2="270"/>
+            <line x1="30" y1="240" x2="130" y2="50"/>
+            <line x1="30" y1="240" x2="130" y2="120"/>
+            <line x1="30" y1="240" x2="130" y2="200"/>
+            <line x1="30" y1="240" x2="130" y2="270"/>
+
+            <!-- Layer 2 -> Layer 3 (16 lines) -->
+            <line x1="130" y1="50"  x2="230" y2="50"/>
+            <line x1="130" y1="50"  x2="230" y2="120"/>
+            <line x1="130" y1="50"  x2="230" y2="200"/>
+            <line x1="130" y1="50"  x2="230" y2="270"/>
+            <line x1="130" y1="120" x2="230" y2="50"/>
+            <line x1="130" y1="120" x2="230" y2="120"/>
+            <line x1="130" y1="120" x2="230" y2="200"/>
+            <line x1="130" y1="120" x2="230" y2="270"/>
+            <line x1="130" y1="200" x2="230" y2="50"/>
+            <line x1="130" y1="200" x2="230" y2="120"/>
+            <line x1="130" y1="200" x2="230" y2="200"/>
+            <line x1="130" y1="200" x2="230" y2="270"/>
+            <line x1="130" y1="270" x2="230" y2="50"/>
+            <line x1="130" y1="270" x2="230" y2="120"/>
+            <line x1="130" y1="270" x2="230" y2="200"/>
+            <line x1="130" y1="270" x2="230" y2="270"/>
+
+            <!-- Layer 3 -> Layer 4 (8 lines) -->
+            <line x1="230" y1="50"  x2="290" y2="120"/>
+            <line x1="230" y1="50"  x2="290" y2="200"/>
+            <line x1="230" y1="120" x2="290" y2="120"/>
+            <line x1="230" y1="120" x2="290" y2="200"/>
+            <line x1="230" y1="200" x2="290" y2="120"/>
+            <line x1="230" y1="200" x2="290" y2="200"/>
+            <line x1="230" y1="270" x2="290" y2="120"/>
+            <line x1="230" y1="270" x2="290" y2="200"/>
+          </g>
+
+          <!-- Nodes -->
+          <g class="nn-nodes">
+            <!-- L1 -->
+            <circle cx="30" cy="80"  r="6"/>
+            <circle cx="30" cy="160" r="6"/>
+            <circle cx="30" cy="240" r="6"/>
+            <!-- L2 -->
+            <circle cx="130" cy="50"  r="7"/>
+            <circle cx="130" cy="120" r="7"/>
+            <circle cx="130" cy="200" r="7"/>
+            <circle cx="130" cy="270" r="7"/>
+            <!-- L3 -->
+            <circle cx="230" cy="50"  r="7"/>
+            <circle cx="230" cy="120" r="7"/>
+            <circle cx="230" cy="200" r="7"/>
+            <circle cx="230" cy="270" r="7"/>
+            <!-- L4 -->
+            <circle cx="290" cy="120" r="8"/>
+            <circle cx="290" cy="200" r="8"/>
+          </g>
+
+          <!-- Layer labels -->
+          <g class="nn-labels">
+            <text x="30"  y="305" text-anchor="middle">input</text>
+            <text x="130" y="305" text-anchor="middle">hidden</text>
+            <text x="230" y="305" text-anchor="middle">hidden</text>
+            <text x="290" y="305" text-anchor="middle">output</text>
+          </g>
+        </svg>
+      </div>
     </div>
 
     <div class="hero-bg" aria-hidden="true">
@@ -98,10 +190,9 @@
           <p>
             At <strong>Algo8.AI</strong> I'm building an industrial ergonomics detection pipeline on
             CCTV feeds (YOLO-Pose + CNN classifiers) and an automated sprint-planning tool on
-            Flask + Zoho Sprints. Before that, I co-founded <strong>Vanara The Rasoi</strong>, a
-            cloud-kitchen brand in Gwalior that grew monthly revenue from <strong>₹13K to ₹3.2L</strong>,
-            and trained on Oracle PL/SQL, APEX, and OCI as an Application Development intern at
-            <strong>Accenture</strong>.
+            Flask + Zoho Sprints. Earlier, I trained on Oracle PL/SQL, APEX, and OCI as an
+            Application Development intern at <strong>Accenture</strong>, and analyzed credit-risk
+            datasets at <strong>Campalin Innovations</strong>.
           </p>
           <p>
             I've also authored two papers presented at <strong>ISCMCTR 2025</strong> as
@@ -226,6 +317,33 @@
       <div class="card-grid">
 
         <article class="card">
+          <div class="card-art" aria-hidden="true">
+            <svg viewBox="0 0 280 110" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="brainGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M 20 0 L 0 0 0 20" stroke="rgba(124,140,255,0.12)" stroke-width="0.5" fill="none"/>
+                </pattern>
+              </defs>
+              <rect width="280" height="110" fill="url(#brainGrid)"/>
+              <!-- scan lines -->
+              <line x1="0" y1="35" x2="280" y2="35" stroke="rgba(92,243,200,0.15)" stroke-width="0.5"/>
+              <line x1="0" y1="75" x2="280" y2="75" stroke="rgba(92,243,200,0.15)" stroke-width="0.5"/>
+              <!-- stylized brain -->
+              <path d="M140 30 Q108 30 100 56 Q92 80 116 86 Q128 90 140 86 Q152 90 164 86 Q188 80 180 56 Q172 30 140 30 Z"
+                    fill="rgba(124,140,255,0.18)" stroke="#7c8cff" stroke-width="1.4"/>
+              <path d="M140 30 L140 86" stroke="#7c8cff" stroke-width="1" stroke-dasharray="2 3" opacity="0.6"/>
+              <!-- detection box -->
+              <rect x="148" y="46" width="22" height="18" fill="none" stroke="#5cf3c8" stroke-width="1.5" stroke-dasharray="3 2"/>
+              <text x="172" y="44" fill="#5cf3c8" font-family="JetBrains Mono, monospace" font-size="7">tumor 0.99</text>
+              <!-- corner ticks -->
+              <g stroke="#7c8cff" stroke-width="1" fill="none" opacity="0.5">
+                <path d="M6 6 L14 6 M6 6 L6 14"/>
+                <path d="M274 6 L266 6 M274 6 L274 14"/>
+                <path d="M6 104 L14 104 M6 104 L6 96"/>
+                <path d="M274 104 L266 104 M274 104 L274 96"/>
+              </g>
+            </svg>
+          </div>
           <div class="card-tag">Computer Vision · Healthcare</div>
           <h3>Brain Tumor Detection System</h3>
           <p>Transfer-learning CNN benchmark on MRI scans across four classes (glioma, meningioma, no-tumor, pituitary). Fine-tuned <strong>Xception</strong> reached <strong>99% test accuracy</strong> with weighted F1 of <strong>0.99</strong>.</p>
@@ -240,6 +358,40 @@
         </article>
 
         <article class="card">
+          <div class="card-art" aria-hidden="true">
+            <svg viewBox="0 0 280 110" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="pipeGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M 20 0 L 0 0 0 20" stroke="rgba(124,140,255,0.12)" stroke-width="0.5" fill="none"/>
+                </pattern>
+              </defs>
+              <rect width="280" height="110" fill="url(#pipeGrid)"/>
+              <g font-family="JetBrains Mono, monospace" font-size="8">
+                <!-- URL node -->
+                <circle cx="32" cy="55" r="16" fill="rgba(124,140,255,0.18)" stroke="#7c8cff" stroke-width="1.4"/>
+                <text x="32" y="58" text-anchor="middle" fill="#7c8cff">URL</text>
+                <line x1="50" y1="55" x2="78" y2="55" stroke="#7c8cff" stroke-width="1" stroke-dasharray="2 2"/>
+                <!-- LLM box -->
+                <rect x="78" y="40" width="40" height="30" rx="5" fill="rgba(92,243,200,0.18)" stroke="#5cf3c8" stroke-width="1.4"/>
+                <text x="98" y="58" text-anchor="middle" fill="#5cf3c8">LLM</text>
+                <line x1="120" y1="55" x2="148" y2="55" stroke="#5cf3c8" stroke-width="1" stroke-dasharray="2 2"/>
+                <!-- Summary node -->
+                <circle cx="166" cy="55" r="16" fill="rgba(124,140,255,0.18)" stroke="#7c8cff" stroke-width="1.4"/>
+                <text x="166" y="58" text-anchor="middle" fill="#7c8cff">SUM</text>
+                <line x1="184" y1="55" x2="212" y2="55" stroke="#7c8cff" stroke-width="1" stroke-dasharray="2 2"/>
+                <!-- Quiz box -->
+                <rect x="212" y="40" width="44" height="30" rx="5" fill="rgba(92,243,200,0.18)" stroke="#5cf3c8" stroke-width="1.4"/>
+                <text x="234" y="58" text-anchor="middle" fill="#5cf3c8">QUIZ</text>
+              </g>
+              <!-- corner ticks -->
+              <g stroke="#7c8cff" stroke-width="1" fill="none" opacity="0.5">
+                <path d="M6 6 L14 6 M6 6 L6 14"/>
+                <path d="M274 6 L266 6 M274 6 L274 14"/>
+                <path d="M6 104 L14 104 M6 104 L6 96"/>
+                <path d="M274 104 L266 104 M274 104 L274 96"/>
+              </g>
+            </svg>
+          </div>
           <div class="card-tag">LLM · EdTech</div>
           <h3>YouTube Summarizer + LangChain Quiz Generator</h3>
           <p>End-to-end pipeline that turns any YouTube URL into a transcript, structured summary, topic list, and adaptive MCQ quiz with per-question feedback.</p>
@@ -267,13 +419,13 @@
       <div class="pub-list">
         <p class="muted small">Both papers presented as <strong>corresponding author</strong> at ISCMCTR 2025.</p>
 
-        <a class="pub" href="https://drive.google.com/file/d/10lPo66cR_8FQU1HJkTNpRUsMWNN5FzRf/view?usp=sharing" target="_blank" rel="noopener">
+        <a class="pub" href="https://drive.google.com/file/d/1IX-InI0xM_4tz3JH4a3xsb4SffcQkQ5b/view?usp=sharing" target="_blank" rel="noopener">
           <h3>AI for Mental Health: ML-Based Depression Detection</h3>
           <p>Survey of ML/NLP approaches to depression detection — datasets, modeling families, evaluation patterns, and open challenges in deploying mental-health AI responsibly.</p>
           <span class="pub-meta">ISCMCTR 2025 · Survey · Read paper ↗</span>
         </a>
 
-        <a class="pub" href="https://drive.google.com/file/d/1IX-InI0xM_4tz3JH4a3xsb4SffcQkQ5b/view?usp=sharing" target="_blank" rel="noopener">
+        <a class="pub" href="https://drive.google.com/file/d/10lPo66cR_8FQU1HJkTNpRUsMWNN5FzRf/view?usp=sharing" target="_blank" rel="noopener">
           <h3>AI-Driven Loan Approval Using PSO-Enhanced ANN &amp; GBM</h3>
           <p>PSO-based hyperparameter tuning lifted ANN accuracy by ~<strong>4%</strong> (84 → 88), while gains on GBM were marginal — suggesting the win comes from PSO's interaction with non-convex deep-model loss landscapes.</p>
           <span class="pub-meta">ISCMCTR 2025 · Empirical · Read paper ↗</span>
@@ -288,35 +440,72 @@
         <h2>Skills</h2>
       </div>
 
+      <p class="muted small skills-note">Items marked <span class="arrow-hint">↗</span> link to a verifiable certificate.</p>
+
       <div class="skill-grid">
         <div class="skill-block">
           <h4>Languages</h4>
           <div class="pills">
-            <span>Python</span><span>SQL</span><span>C++</span>
+            <a href="https://www.udemy.com/certificate/UC-fa750696-cd6b-46fe-987d-e94f94a8cd32/" target="_blank" rel="noopener">Python</a>
+            <a href="https://www.udemy.com/certificate/UC-1bb0ea49-9f41-43e2-ac71-22bd1cb40914/" target="_blank" rel="noopener">SQL</a>
+            <span>C++</span>
           </div>
         </div>
+
         <div class="skill-block">
           <h4>Machine Learning</h4>
           <div class="pills">
-            <span>Scikit-learn</span><span>TensorFlow</span><span>Keras</span><span>Computer Vision</span><span>Deep Learning</span>
+            <span>Scikit-learn</span>
+            <span>TensorFlow</span>
+            <span>Keras</span>
+            <span>Computer Vision</span>
+            <a href="https://www.udemy.com/certificate/UC-6d7569fd-028f-473a-86e7-d67e50c63021/" target="_blank" rel="noopener">Data Science &amp; ML</a>
+            <a href="https://www.udemy.com/certificate/UC-3f563163-cb46-4e56-84fb-a497b3bcbef1/" target="_blank" rel="noopener">Deep Learning</a>
           </div>
         </div>
+
         <div class="skill-block">
           <h4>NLP / LLMs</h4>
           <div class="pills">
-            <span>NLTK</span><span>spaCy</span><span>LangChain</span><span>OpenAI API</span><span>Prompt Engineering</span>
+            <span>NLTK</span>
+            <span>spaCy</span>
+            <a href="https://www.udemy.com/certificate/UC-3a3253ca-56c5-416b-a717-98e802de2231/" target="_blank" rel="noopener">Natural Language Processing</a>
+            <a href="https://www.udemy.com/certificate/UC-5bbaeb97-4ded-4daf-8103-d94b0fa9d57d/" target="_blank" rel="noopener">LangChain</a>
+            <span>OpenAI API</span>
+            <a href="https://www.udemy.com/certificate/UC-db47dc9d-08a3-4c89-b4d9-1186308b841a/" target="_blank" rel="noopener">Prompt Engineering</a>
           </div>
         </div>
+
         <div class="skill-block">
           <h4>Data &amp; Analytics</h4>
           <div class="pills">
-            <span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>Plotly</span><span>Power BI</span><span>Tableau</span><span>Zoho Analytics</span><span>Excel (Power Query)</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>Matplotlib</span>
+            <span>Seaborn</span>
+            <span>Plotly</span>
+            <span>Zoho Analytics</span>
+            <a href="https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop/learn/lecture/38015966#overview" target="_blank" rel="noopener">Power BI</a>
+            <a href="https://www.udemy.com/course/complete-tableau-bootcamp-dashboards/learn/lecture/15188504#overview" target="_blank" rel="noopener">Tableau</a>
+            <a href="https://www.udemy.com/certificate/UC-943d91f4-8bd7-4638-8479-61f71e8a0d10/" target="_blank" rel="noopener">Excel (Pivot Tables)</a>
+            <a href="https://www.udemy.com/course/microsoft-excel-power-query-power-pivot-dax/learn/lecture/8086902?start=0#overview" target="_blank" rel="noopener">Excel (Power Query)</a>
+            <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs09/Course/NPTEL25CS09S64640082604216760.pdf" target="_blank" rel="noopener">BI &amp; Analytics (NPTEL)</a>
           </div>
         </div>
+
         <div class="skill-block">
           <h4>Cloud &amp; Tools</h4>
           <div class="pills">
-            <span>Flask</span><span>OIC</span><span>Oracle APEX</span><span>AWS</span><span>Git &amp; GitHub</span><span>CI/CD</span><span>Zoho API Console</span><span>VS Code</span>
+            <span>Flask</span>
+            <span>OIC</span>
+            <span>Oracle APEX</span>
+            <span>Zoho API Console</span>
+            <span>CI/CD</span>
+            <span>VS Code</span>
+            <a href="https://www.udemy.com/certificate/UC-084e1ffe-4da2-4d6b-9b4f-5b384c8d9daf/" target="_blank" rel="noopener">Git &amp; GitHub</a>
+            <a href="https://www.udemy.com/certificate/UC-192ae77a-b7f9-4ee-9983-c9a7be6e3bdc/" target="_blank" rel="noopener">AWS Cloud Essentials</a>
+            <a href="https://www.udemy.com/certificate/UC-db47dc9d-08a3-4c89-b4d9-1186308b841a/" target="_blank" rel="noopener">Generative AI Tools</a>
+            <a href="https://www.udemy.com/certificate/UC-3daaa885-82fc-48fb-9c16-3b3e51cce1a8/" target="_blank" rel="noopener">Product Thinking</a>
           </div>
         </div>
       </div>
